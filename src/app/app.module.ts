@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { GaleriaComponent } from './componentes/galeria/galeria.component';
 import { VistaComponent } from './componentes/vista/vista.component';
-
+import { HttpClientModule} from "@angular/common/http"
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { VistaComponent } from './componentes/vista/vista.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

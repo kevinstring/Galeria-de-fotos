@@ -1,1 +1,6 @@
-<p>galeria works!</p>
+
+<div class="flex justify-center gap-2 p-4 bg-gray-400">
+    <div *ngFor="let i of coleccion" class="">
+        <img class="h-auto max-w-full rounded-lg hover:rounded-none" src={{i.thumbnailUrl}} alt="">
+    </div>
+    
