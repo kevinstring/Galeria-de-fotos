@@ -1,0 +1,6 @@
+#divGaleria{
+    height: 80vh;
+}
+img{
+    cursor: pointer;
+}

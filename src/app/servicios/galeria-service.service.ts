@@ -11,9 +11,12 @@ export class GaleriaServiceService {
   url:string="https://jsonplaceholder.typicode.com/photos"
   constructor(private http:HttpClient) { }
 
-
-  extraerDatos(){
-    return this.http.get<galeria>(this.url).pipe(map(
+extraerDatosPorId(id:string){
+  return this.http.get<galeria>( `${this.url}/${id}`)
+ 
+}
+  extraerDatosScroll(inicio:number, final:number){
+    return this.http.get<galeria>(`${this.url}?_start=${inicio}&_limit=${final}`).pipe(map(
       (datos:galeria)=>
     
       {
