@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, OnInit } from '@angular/core';
 import { galeria } from 'src/app/interfaces/galeria-interface';
 import { GaleriaServiceService } from 'src/app/servicios/galeria-service.service';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
@@ -47,7 +47,4 @@ this.final=this.final+30
  }) 
 }
 
-manejarDatoEmitido(datoRecibido: string) {
-  console.log('Dato recibido en el componente padre:', datoRecibido);
-}
 }

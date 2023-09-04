@@ -10,6 +10,7 @@ import { HttpClientModule} from "@angular/common/http"
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GaleriaPipePipe } from './pipes/galeria-pipe.pipe';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { GaleriaPipePipe } from './pipes/galeria-pipe.pipe';
     HttpClientModule,
     InfiniteScrollModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
     
 
 
